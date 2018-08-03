@@ -1,0 +1,29 @@
+/* CSS Document */
+
+/* Table of Contents
+-----------------------------------------------------------------------------
+1. Desktop
+2. Tablet
+3. Medium devices
+4. Small devices
+*/
+
+/* ----- 1. Desktop ≥1024px and ≤1190 ----- */
+@media (min-width:1024px) and (max-width:1199px) {	
+ .container {padding-right: 70px;padding-left: 70px;}
+}
+
+/* ----- 2. Tablet ≥768px and ≤1023 ----- */
+@media (min-width:768px) and (max-width:1023px) {
+ .container {padding-right: 60px;padding-left: 60px;}
+}
+
+/* ----- 3. Medium devices ≤767px ----- */
+@media (max-width:767px) {
+    .container {padding-right: 40px;padding-left: 40px;} 
+}
+
+/* ----- 4. Small devices ≤640px ----- */
+@media (max-width:640px) {
+  .container {padding-right: 25px;padding-left: 25px;}   
+}

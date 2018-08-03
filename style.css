@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/* Table of Contents
+-----------------------------------------------------------------------------
+1. Clean Base
+2. Base Typography
+3. Images
+4. Links
+5. Forms
+6. Tables
+7. Framework 
+*/
+
+/* 1. Clean Base
+------------------------------------------------------------------------------*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, 
+legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, a, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; text-decoration:none; list-style:none; outline:none; -webkit-font-smoothing: subpixel-antialiased; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+html,body { -webkit-text-size-adjust:none; height: 100%; }
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display: block;}
+iframe {vertical-align: top;}
+textarea:focus, input:focus, a, div, img { outline: none; }
+
+*,
+*:before,
+*:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+/* 2. Base Typography
+------------------------------------------------------------------------------*/
+body{ color:#000; font-size:16px; font-family: 'Open Sans', sans-serif; font-weight:400; line-height:1.5; background-color: #fff;display: flex;flex-wrap: wrap;}
+
+.h1, .h2, .h3, .h4, .h5, .h6, 
+h1, h2, h3, h4, h5, h6 {color: #000; line-height: 1.2;font-weight:600; font-family: inherit;}
+
+.h1, h1 {font-size:40px; margin-bottom: 20px;}
+.h2, h2 {font-size:35px; margin-bottom: 20px;}
+.h3, h3 {font-size:25px; margin-bottom: 18px;}
+.h4, h4 {font-size:22px; margin-bottom: 17px;}
+.h5, h5 {font-size:20px; margin-bottom: 15px;}
+.h6, h6 {font-size:18px; margin-bottom: 10px;}
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a, h6 a, .h6 a {color: inherit; text-decoration: none;}
+
+p { color:#000; font-size:16px; font-weight:400; line-height:1.6;  margin-bottom:20px; }
+p:last-child { margin-bottom:0; }
+
+ul{ margin:0;margin-left: 20px; padding:0; }
+ul li{ font-size:16px;  color:#000; font-weight:400; line-height:1.5;padding: 0;margin-bottom: 8px; }
+ul li:last-child{margin-bottom: 0;}
+ul > li { list-style:outside disc; }
+
+ol{ margin:0;margin-left: 20px; padding:0; list-style: none; }
+ol li{ font-size:16px;  color:#000; font-weight:400; line-height:1.5;padding: 0;margin-bottom: 8px;  }
+ol > li { list-style: outside decimal; }
+
+blockquote{ display:block; text-align:left; margin-bottom:20px; position:relative; background:#f3f3f3; padding:20px 20px; border-left:4px solid #1589cb;line-height: 2;font-size: 20px; font-style: italic;margin-bottom: 25px;}
+blockquote p{ font-size:inherit; font-weight:inherit; line-height:inherit; }
+
+hr {border:0 #000 solid; border-top-width:1px; clear:both; height:0;margin: 10px auto 40px;}
+
+img{ border:none; max-width: 100%; vertical-align: top; height: auto;}
+img[src$=".svg"] {width: 100%;}
+
+/* 4. Link
+------------------------------------------------------------------------------*/
+a{ color:#4777ac; transition: background-color 0.3s ease 0s, color 0.3s ease 0s; }
+a:hover{ color:#000; text-decoration: underline; }
+a:focus {outline: none;}
+
+/* 5. Forms
+------------------------------------------------------------------------------*/
+label {color:#000; font-size:16px; font-weight:400; line-height:1.5;  margin-bottom:10px; display: block;}
+input, 
+textarea, 
+button { font-family: 'Open Sans', sans-serif;  }
+input[type="text"],
+input[type="submit"],
+input[type="button"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+textarea {-webkit-appearance: none; outline: none;}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="search"],
+input[type="number"],
+textarea { border:1px solid #dedede; padding:0 15px; color:#000; font-size:16px; height:46px; font-weight: 400; width: 100%;}
+
+textarea{ height:150px; resize:none; overflow: auto; padding: 20px 15px; }
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+input[type="search"]:focus,
+input[type="number"]:focus,
+textarea:focus {border-color: #66afe9}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {-webkit-appearance: button; cursor: pointer; background-color: #cbcbcb; padding: 0 15px; height: 40px; display: inline-block; vertical-align: top; font-size: 14px; font-weight: 600; line-height: 1.52857143; text-align: center; border: none; text-transform: uppercase; border-radius: 0px; color: #fff; background-color: #0eb769; }
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {background-color: #66afe9; color: #fff;}
+
+input[type="search"] {-webkit-appearance: textfield;}
+
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
+
+::-webkit-input-placeholder { opacity: 1 !important; color: #000; }
+:-moz-placeholder { opacity: 1 !important; color: #000; }
+::-moz-placeholder { opacity: 1 !important; color: #000; }
+:-ms-input-placeholder { opacity: 1 !important; color: #000; }
+
+.form-group {margin-bottom: 30px;}
+
+/* buttons */
+.btn { display: inline-block; vertical-align: top; padding: 6px 12px;font-size: 14px; font-weight: 600; line-height: 1.52857143; text-align: center; border: none; text-transform: uppercase; border-radius: 0px; color: #fff; background-color: #0eb769; }
+.btn:hover,
+.btn:focus { color: #fff; background-color: #019852; border-color: #019852;text-decoration: none}
+.btn-sm {padding: 8px 16px; }
+.btn-md {padding: 12px 24px;}
+.btn-link { color: #98989c; text-transform: uppercase; font-size: 12px; font-weight: 700; letter-spacing: 2px; border-bottom: 1px solid #98989c; margin-bottom: 2px; }
+.btn-link:hover,
+.btn-link:focus{ color: #0eb769; font-weight: 700; text-decoration: none; border-bottom: 1px solid #0eb769; }
+
+/* 6. Tables
+------------------------------------------------------------------------------*/
+table {border-spacing: 0; border-collapse: collapse;}
+td {text-align: left; font-weight: normal;}
+.table-responsive {display: block;width: 100%;overflow-x: auto;-webkit-overflow-scrolling: touch;-ms-overflow-style: -ms-autohiding-scrollbar}
+.table-bordered{width: 100%;max-width: 100%;text-align: left;}
+.table-bordered th, 
+.table-bordered td{ vertical-align: bottom;border-bottom: 1px solid #ddd;padding: 10px;}
+
+/* 7. Layout Framework
+------------------------------------------------------------------------------*/
+/* main container */
+#wrapper {width: 100%;display: flex;min-height: 100%;position: relative;flex-wrap: wrap;background-color: #fff;justify-content: space-between;align-content: space-between;}
+.main-container{width:100%;}
+.container {max-width: 1200px;}
+.body-content ul, 
+.body-content ol{margin-bottom: 20px;}
+.body-content ul ul, 
+.body-content ul ol,
+.body-content ol ol,
+.body-content ol ul{margin-bottom: 0;}
+
+/* header */
+.main-header { width:100%; height:auto;}
+
+/* responsive nav for small devices */
+.hamburger{padding: 0;margin: 0;height: auto;width: auto; text-align: center;background-color: transparent}
+.hamburger:not(.close){position: absolute;top: 20px;right: 20px;z-index: 99;}
+.hamburger:hover, 
+.hamburger:focus{background-color: transparent;outline: none;}
+.hamburger .line{width: 30px;height: 4px;background-color: #e67e22;display: block;margin: 6px auto;}
+.hamburger:hover{cursor: pointer;}
+.hamburger.close{padding: 10px;}
+.hamburger.close .wrap{ position: relative;width: 30px;height: 30px;display: block;}
+.hamburger.close .line{margin: 0;width:100%;position: absolute;top: calc(50% - 2px);transform: rotate(45deg);background-color: #fff}
+.hamburger.close .line:last-child{transform: rotate(-45deg);}
+#menu{position: fixed;top: 0;left: -100%;width:80%;height: 100%;background-color: #3ab4a6;max-width: 450px;transition: all 0.3s ease-in-out;z-index: 999;}
+#mobilenav.is-open #menu{left: 0;}
+#mobilenav .nav-logo{padding: 15px;}
+#mobilenav ul,
+#mobilenav li{padding: 0;margin: 0;list-style: none;position: relative;}
+#mobilenav ul ul{display: none;}
+#mobilenav .caret{display: block;width: 36px;height: 36px;position: absolute;top: 3px;right: 2px;cursor: pointer;}
+#mobilenav .caret:not(.trigger-caret){pointer-events: none;}
+#mobilenav .caret:before,
+#mobilenav .caret:after{content:'';position: absolute;top: 0;left: 0;bottom: 0;right: 0;display: block;margin: auto; width: 20px;height: 2px;background: #fff;}
+#mobilenav .caret:after{transform: rotate(-90deg);transition: all .2s ease;}
+#mobilenav .is-open > .caret:after{transform: rotate(0)}
+#mobilenav ul a {display: block;padding: 10px 15px;cursor: pointer;z-index: 2;font-size: 16px;text-decoration: none;color: #ffffff;background: #3ab4a6;border-bottom: 1px solid #fff}
+#mobilenav .has-sub>a{padding-right: 40px;}
+#mobilenav li li a { padding-left: 30px; font-size: 14px;text-decoration: none;color: #dddddd;background: #49505a; }
+#mobilenav li li li a {padding-left: 50px;}
+#mobilenav .nav-backdrop{ position: fixed;height: 100%;width: 100%;background: rgba(0,0,0,0.8);z-index: -1;opacity: 0;visibility: hidden;transition: all 0.4s ease-in;}
+#mobilenav.is-open .nav-backdrop{ opacity: 1;z-index: 999;visibility: visible;}
+#mobilenav .menu-outer{max-height: calc(100vh - 80px);overflow-y: auto;padding-bottom: 60px;}
+
+/* nav */
+.navigation { width:100%; height:auto; }
+.navigation ul{ padding: 0; margin: 0; list-style: none; }
+.navigation ul li{ padding: 0; margin: 0; list-style: none; }
+.navigation ul li a {}
+
+/* footer */
+.main-footer { width:100%; height:auto; background:#322348; line-height: normal;}
+
+/*--------- home page ------------*/
+/* banner part */
