@@ -32,8 +32,7 @@ textarea:focus, input:focus, a, div, img { outline: none; }
 body{ color:#000; font-size:16px; font-family: 'Open Sans', sans-serif; font-weight:400; line-height:1.5; background-color: #fff;display: flex;flex-wrap: wrap;}
 
 .h1, .h2, .h3, .h4, .h5, .h6, 
-h1, h2, h3, h4, h5, h6 {color: #000; line-height: 1.2;font-weight:600; font-family: inherit;}
-
+h1, h2, h3, h4, h5, h6 {color: #000; line-height: 1.2;font-weight:700; font-family: inherit;}
 .h1, h1 {font-size:40px; margin-bottom: 20px;}
 .h2, h2 {font-size:35px; margin-bottom: 20px;}
 .h3, h3 {font-size:25px; margin-bottom: 18px;}
@@ -42,16 +41,14 @@ h1, h2, h3, h4, h5, h6 {color: #000; line-height: 1.2;font-weight:600; font-fami
 .h6, h6 {font-size:18px; margin-bottom: 10px;}
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a, h6 a, .h6 a {color: inherit; text-decoration: none;}
 
-p { color:#000; font-size:16px; font-weight:400; line-height:1.6;  margin-bottom:20px; }
+p { color:#000; font-size:16px; font-weight:400; line-height:1.6;  margin-bottom:15px; }
 p:last-child { margin-bottom:0; }
 
-ul{ margin:0;margin-left: 20px; padding:0; }
-ul li{ font-size:16px;  color:#000; font-weight:400; line-height:1.5;padding: 0;margin-bottom: 8px; }
-ul li:last-child{margin-bottom: 0;}
+ul, 
+ol{ margin: 0;padding: 0;margin-left: 17px;}
+ul li, 
+ol li{ font-size:16px;  color:#000; font-weight:400; line-height:1.5;padding: 0;margin: 0;padding-bottom: 5px; }
 ul > li { list-style:outside disc; }
-
-ol{ margin:0;margin-left: 20px; padding:0; list-style: none; }
-ol li{ font-size:16px;  color:#000; font-weight:400; line-height:1.5;padding: 0;margin-bottom: 8px;  }
 ol > li { list-style: outside decimal; }
 
 blockquote{ display:block; text-align:left; margin-bottom:20px; position:relative; background:#f3f3f3; padding:20px 20px; border-left:4px solid #1589cb;line-height: 2;font-size: 20px; font-style: italic;margin-bottom: 25px;}
@@ -70,7 +67,7 @@ a:focus {outline: none;}
 
 /* 5. Forms
 ------------------------------------------------------------------------------*/
-label {color:#000; font-size:16px; font-weight:400; line-height:1.5;  margin-bottom:10px; display: block;}
+form label {color:#000; font-size:16px; font-weight:400; line-height:1.5;  margin-bottom:10px; display: block;}
 input, 
 textarea, 
 button { font-family: 'Open Sans', sans-serif;  }
@@ -81,7 +78,7 @@ input[type="password"],
 input[type="email"],
 input[type="tel"],
 input[type="search"],
-textarea {-webkit-appearance: none; outline: none;}
+textarea {-webkit-appearance: none; outline: none;border-radius: 0;}
 
 input[type="text"], 
 input[type="password"], 
@@ -89,9 +86,9 @@ input[type="email"],
 input[type="tel"], 
 input[type="search"],
 input[type="number"],
-textarea { border:1px solid #dedede; padding:0 15px; color:#000; font-size:16px; height:46px; font-weight: 400; width: 100%;}
+textarea { border:1px solid #dedede; padding:7px 10px; color:#000; font-size:16px;font-weight: 400; width: 100%;}
 
-textarea{ height:150px; resize:none; overflow: auto; padding: 20px 15px; }
+textarea{ height:150px; resize:none; overflow: auto; padding: 10px 15px; }
 
 input[type="text"]:focus, 
 input[type="password"]:focus, 
@@ -115,6 +112,7 @@ input[type="search"] {-webkit-appearance: textfield;}
 
 input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
 
+/* placeholder color */
 ::-webkit-input-placeholder { opacity: 1 !important; color: #000; }
 :-moz-placeholder { opacity: 1 !important; color: #000; }
 ::-moz-placeholder { opacity: 1 !important; color: #000; }
@@ -147,14 +145,8 @@ td {text-align: left; font-weight: normal;}
 #wrapper {width: 100%;display: flex;min-height: 100%;position: relative;flex-wrap: wrap;background-color: #fff;justify-content: space-between;align-content: space-between;}
 .main-container{width:100%;}
 .container {max-width: 1200px;}
-.body-content ul, 
-.body-content ol{margin-bottom: 20px;}
-.body-content ul ul, 
-.body-content ul ol,
-.body-content ol ol,
-.body-content ol ul{margin-bottom: 0;}
 
-/* header */
+/*---- header ----*/
 .main-header { width:100%; height:auto;}
 
 /* responsive nav for small devices */
@@ -194,7 +186,7 @@ td {text-align: left; font-weight: normal;}
 .navigation ul li{ padding: 0; margin: 0; list-style: none; }
 .navigation ul li a {}
 
-/* footer */
+/*---- footer ----*/
 .main-footer { width:100%; height:auto; background:#322348; line-height: normal;}
 
 /*--------- home page ------------*/
