@@ -4,3 +4,4 @@ HTML5 Boilerplate is a professional front-end template for building fast, robust
 * Home page
 * Typography page
 * 404 page
+* Sitemap
