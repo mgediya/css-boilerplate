@@ -2,75 +2,127 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Home -  HTML Boilerplate 1.1.1</title>
+        <title>HTML Boilerplate 1.1.2</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="description" content="" /> 
         <meta name="keywords" content="">
         <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
         <link rel="icon" type="image/png" href="assets/images/favicon.png" /> 
 
-        <!-- Vender css --> 
-       
-        <!-- main css --> 
-        <link href="style.css" rel="stylesheet" />
-        <link href="assets/css/common.css" rel="stylesheet" />
-        <link href="assets/css/responsive.css" rel="stylesheet" />
+        <!-- vendor css -->
+        <link href="assets/css/utilities.min.css" rel="stylesheet" />
 
-        <!-- Font css --> 
-        <link href="assets/fonts/generated/generated-font.css" rel="stylesheet"/>
-        <link href="assets/fonts/styles.css" rel="stylesheet"/> 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+        <!-- theme stylesheet -->
+        <link href="style.css" rel="stylesheet" />
+        <link href="assets/css/responsive.css" rel="stylesheet" />
     </head>
     <body>
 
-        <!-- start --> 
-        <div id="wrapper">
+        <!-- start -->
+        <div class="wrapper">
             <div class="main-container">
-                <!-- header part --> 
-                <header class="main-header">
-                    <div class="container">
-                        <nav class="navigation">
-                            <ul>
-                                <li><a href="#"></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </header>
-                <!-- banner area part --> 
-                <section class="hero-section">
-                    <div class="container"></div>
-                </section>
-                <div class="main-content">
-                    <!-- content area part --> 
-                    <section class="name-section">
-                        <div class="container">
-                            <article class="space-medium">
-                                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, possimus.</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maiores autem velit rerum, nesciunt non iusto repellendus placeat quas consectetur in ad, nisi incidunt.</p>
-                            </article>
+                <div class="mobilenav cell-md-none">
+                    <div class="nav-backdrop"></div>
+                    <!-- hamburger -->
+                    <a href="javascript:;" class="hamburger">
+                        <span class="wrap">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </span>
+                    </a>
+                    <div class="menu-state" data-clickable="true">
+                        <!-- menu header and hamburger -->
+                        <div class="row no-gutters">
+                            <div class="cell-8">
+                                <div class="nav-logo">
+                                    <span>Logo</span>
+                                </div>
+                            </div>
+                            <div class="cell-4 d-flex justify-content-end">
+                                <a href="javascript:;" class="hamburger close">
+                                    <span class="wrap">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
-                    </section>
-                </div>  
-            </div>   
+                        <!--  main responsive menu -->
+                        <div class="menu-outer">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a>
+                                    <!-- submenu level 2  -->
+                                    <ul>
+                                        <li><a href="#">About 2</a>
+                                            <ul>
+                                                <li><a href="#">About 3</a></li>
+                                                <li><a href="#">About 3</a></li>
+                                                <li><a href="#">About 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">About 2</a>
+                                            <!-- submenu level 3 -->
+                                            <ul>
+                                                <li><a href="#">About 3</a></li>
+                                                <li><a href="#">About 3</a></li>
+                                                <li><a href="#">About 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">About 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Service</a>
+                                    <ul>
+                                        <li><a href="#">Service 2</a></li>
+                                        <li><a href="#">Service 2</a>
+                                            <ul>
+                                                <li><a href="#">Service 3</a></li>
+                                                <li><a href="#">Service 3</a></li>
+                                                <li><a href="#">Service 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Service 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- footer part --> 
+                <!-- header part -->
+                <header class="main-header"></header>
+                <!-- banner area part -->
+                <section class="hero-section py-50">
+                    <div class="container">
+                        <h1>Hero banner goes here</h1>
+                    </div>
+                </section>
+                <!-- content area part -->
+                <div class="main-content">
+                    <section class="container welcome">
+                        <h2>Welcome section goes here</h2>
+                    </section>
+                </div>
+            </div>
+
+            <!-- footer part -->
             <footer class="main-footer">
-                <div class="container space-small">
+                <div class="container py-30">
                     <h2>Footer</h2>
                 </div>
             </footer>
-        </div> 
+        </div>
 
-        <!-- main script --> 
-        <script src="assets/js/jquery-1.11.2.min.js"></script>
+        <!-- jquery library --> 
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
 
-        <!--[if IE]>
-<script src="js/html5shiv.js"></script>
-<![endif]--> 
+        <!-- vendor js -->
 
-        <!-- Vender js -->
-
-        <!-- general script --> 
+        <!-- theme script --> 
         <script src="assets/js/scripts.js"></script> 
     </body>
 </html>

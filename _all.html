@@ -2,47 +2,51 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>All pages</title>
+        <title>Sitemap | HTML Boilerplate 1.1.2</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="description" content="" /> 
         <meta name="keywords" content="">
         <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
         <link rel="icon" type="image/png" href="assets/images/favicon.png" /> 
 
-        <!-- main css --> 
-        <link href="style.css" rel="stylesheet" />
-        <link href="assets/css/common.css" rel="stylesheet" />
-        <link href="assets/css/responsive.css" rel="stylesheet" />
+        <!-- vendor css -->
+        <link href="assets/css/utilities.min.css" rel="stylesheet" />
 
-        <!-- Font css --> 
-        <link href="assets/fonts/generated/generated-font.css" rel="stylesheet"/>
-        <link href="assets/fonts/styles.css" rel="stylesheet"/> 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+        <!-- theme stylesheet -->
+        <link href="style.css" rel="stylesheet" />
+        <link href="assets/css/responsive.css" rel="stylesheet" />
     </head>
     <body>
 
         <!-- start --> 
-        <div id="wrapper">
+        <div class="wrapper">
             <div class="main-container">
-                <!-- header part --> 
-                <div class="container space-small">
-                    <h1>All pages URLs</h1>
-                </div>
                 <div class="main-content">
                     <section class="container">
-                        <div class="row">
-                            <div class="col-md-9 space-small">
+                        <div class="row justify-content-center">
+                            <div class="cell-9">
+                                <!-- header part --> 
+                                <div class="py-50">
+                                    <h1>All pages URLs</h1>
+                                </div>
                                 <table class="table-bordered">
                                     <tr>
                                         <th>No.</th>
                                         <th>Name of page</th>
                                         <th>Link of page</th>
                                     </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>01-Home</td>
-                                        <td><a href="index.html" target="_blank" >index</a></td>
+                                    <tr>                                       
+                                        <td>Home</td>
+                                        <td><a href="index.html"></a></td>
                                     </tr>
+                                    <tr>                                        
+                                        <td>404 Page</td>
+                                        <td><a href="404page.html"></a></td>
+                                    </tr>
+                                    <tr>                                        
+                                        <td>Typography</td>
+                                        <td><a href="typography.html"></a></td>
+                                    </tr>                                    
                                 </table>
                             </div>
                         </div>
@@ -50,5 +54,16 @@
                 </div>
             </div>   
         </div> 
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('table tr:not(:first)').each(function (index) {
+                    var link_name = $(this).find('a').attr('href');
+                    $(this).find('a').text(link_name.split('.')[0]).attr("target", "_blank");;
+                    $(this).prepend('<td class="num">');
+                    $('table .num').text(function (index) { return + (index + 1); });
+                });
+            });
+        </script>
     </body>
 </html>

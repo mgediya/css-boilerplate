@@ -2,28 +2,43 @@
 
 /* Table of Contents
 -----------------------------------------------------------------------------
-1. Desktop
-2. Tablet
-3. Medium devices
-4. Small devices
+=> Desktop
+=> Tablet
+=> Medium devices
+=> Small devices
+=> iPhone X landscape
 */
 
-/* ----- 1. Desktop ≥1024px and ≤1190 ----- */
-@media (min-width:1024px) and (max-width:1199px) {	
- .container {padding-right: 70px;padding-left: 70px;}
+/* ----- Desktop ≥1024px and ≤1190 ----- */
+@media ( min-width: 1024px ) and ( max-width: 1199px ) {
+
 }
 
-/* ----- 2. Tablet ≥768px and ≤1023 ----- */
-@media (min-width:768px) and (max-width:1023px) {
- .container {padding-right: 60px;padding-left: 60px;}
+/* ----- Tablet ≥768px and ≤1023 ----- */
+@media ( min-width: 768px ) and ( max-width: 1023px ) {
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
 }
 
-/* ----- 3. Medium devices ≤767px ----- */
-@media (max-width:767px) {
-    .container {padding-right: 40px;padding-left: 40px;} 
+/* ----- iPhone X landscape ≥375px and ≤812 ----- */
+@media ( min-width: 375px ) and ( max-width: 812px ) and ( orientation: landscape ) {
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
 }
 
-/* ----- 4. Small devices ≤640px ----- */
-@media (max-width:640px) {
-  .container {padding-right: 25px;padding-left: 25px;}   
+/* ----- Medium devices ≤767px ----- */
+@media ( max-width: 767px ) {
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+
+/* ----- Small devices ≤640px ----- */
+@media ( max-width: 640px ) {
+
 }
