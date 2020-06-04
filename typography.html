@@ -28,7 +28,7 @@
             <!-- banner area part -->
             <section class="hero-section pt-20">
                 <div class="container">
-                    <h1>H1 Title Goes Here</h1>
+                    <h1>Banner Goes Here</h1>
                 </div>
             </section>
 
@@ -36,8 +36,6 @@
                 <!-- content area part -->
                 <section class="body-content">
                     <div class="container">
-
-
                         <h2>H2 Title Goes Here</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -46,8 +44,13 @@
                             It was <a href="#"><strong>popularised</strong></a> in the 1960s with the release of
                             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                             software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <img alt="" class="alignleft"
-                            src="https://dummyimage.com/600x400/022566/fff.jpg&text=HTMl+Boilerplate">
+                        <h3> &#60;picture&#62; tag in HTML </h3>
+                        <p>Resize the browser window to load different images.</p>
+                        <picture class="alignleft">
+                            <source media="(min-width:1200px)" srcset="https://dummyimage.com/600x400/54c5d0/fff.jpg&text=HTMl+Boilerplate">
+                            <source media="(min-width:768px)" srcset="https://dummyimage.com/600x400/f79548/fff.jpg&text=HTMl+Boilerplate">
+                            <img src="https://dummyimage.com/600x400/1574a2/fff.jpg&text=HTMl+Boilerplate" alt="Flowers" style="width:auto;">
+                        </picture>
                         <h3>H3 Title Goes Here</h3>
                         <p>Lorem Ipsum is <strong>simply dummy</strong> text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
@@ -201,10 +204,20 @@
                                     <option value="">City 3</option>
                                 </select>
                             </div>
-                            <div class="cell-md-12 form-group">
+                            <div class="cell-12 form-group">
                                 <label for="field-6">Write your message...</label>
                                 <textarea name="" id="field-6" placeholder="write your message..."></textarea>
                             </div>
+                            <div class="cell-12 form-group radio-btn-group">
+                                <div class="radio-option radio-item">
+                                   <input type="radio" class="radio-custom" name="joinradio" id="r1" checked>
+                                   <label for="r1" class="radio-custom-label">Yes</label>
+                                </div>
+                                <div class="radio-option radio-item">
+                                   <input type="radio" class="radio-custom" name="joinradio" id="r2">
+                                   <label for="r2" class="radio-custom-label">No</label>
+                                </div>
+                             </div>
                             <div class="cell-md-6 form-group">
                                 <input type="submit" value="SUBMIT">
                             </div>
@@ -224,8 +237,8 @@
     </div>
 
     <!-- jquery library -->
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>-->
 
     <!-- vendor js -->
 

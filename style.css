@@ -132,6 +132,11 @@ img {
     outline: none;
 }
 
+picture{
+    display: inline-block;
+    vertical-align: top;
+}
+
 *,
 *:before,
 *:after {
@@ -139,7 +144,6 @@ img {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 /* Base Typography
 ------------------------------------------------------------------------------*/
 body {
@@ -401,10 +405,11 @@ textarea {
 }
 
 textarea {
+    display: block;
     height: 150px;
+    padding: 20px 15px;
     resize: none;
     overflow: auto;
-    padding: 20px 15px;
 }
 
 select {
@@ -613,6 +618,45 @@ td {
     max-width: 100%;
 }
 
+/*--- custom radio ---*/
+.radio-item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+.radio-item:first-child {
+    padding-left: 0;
+}
+.radio-custom {
+    position: absolute;
+    opacity: 0;
+}
+.radio-custom:focus + .radio-custom-label {
+    outline: none;
+}
+.radio-custom:checked + .radio-custom-label:before {
+    background-color: #000;
+}
+.radio-custom-label {
+    margin: 0;
+    color: #000;
+    cursor: pointer;
+}
+.radio-custom-label:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 10px;
+    width: 10px;
+    margin-top: -3px;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 2px #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
 /*--- header ---*/
 .main-header {
     width: 100%;
@@ -624,13 +668,13 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 1em;
+    width: 1em;
     padding: 0;
     margin: 0;
     font-size: 50px;
-    height: 1em;
-    width: 1em;
-    background-color: transparent;
     text-align: center;
+    background-color: transparent;
 }
 
 .hamburger:not(.close) {
@@ -649,8 +693,8 @@ td {
 .hamburger .line {
     display: block;
     width: 0.6em;
-    margin: 6px auto;
     height: 4px;
+    margin: 6px auto;
     background-color: #e67e22;
 }
 
@@ -678,8 +722,8 @@ td {
     top: calc(50% - 2px);
     width: 100%;
     margin: 0;
+    background-color: #fff;
     transform: rotate(45deg);
-    background-color: #fff
 }
 
 .hamburger.close .line:last-child {
@@ -761,14 +805,14 @@ td {
 }
 
 .mobilenav ul a {
-    z-index: 2;
     display: block;
     padding: 0.5em 0.75em;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
     font-size: 1em;
     text-decoration: none;
-    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    z-index: 2;
+    cursor: pointer;
 }
 
 .mobilenav li li {
@@ -793,25 +837,25 @@ td {
 
 .mobilenav .nav-backdrop {
     position: fixed;
-    z-index: -1;
     height: 100%;
     width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.4s ease-in;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.4s ease-in;
-    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
 }
 
 .mobilenav.is-open .nav-backdrop {
     opacity: 1;
-    z-index: 999;
     visibility: visible;
+    z-index: 999;
 }
 
 .mobilenav .menu-outer {
     max-height: calc(100vh - 80px);
-    overflow-y: auto;
     padding-bottom: 60px;
+    overflow-y: auto;
 }
 
 /* nav */
@@ -840,8 +884,8 @@ td {
 .main-footer {
     width: 100%;
     height: auto;
-    background: #808080;
     line-height: normal;
+    background: #808080;
 }
 
 /*--------- 404 page ---------*/
